@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let input = fs::read_to_string("input.txt").unwrap();
+    let input = fs::read_to_string("input/day02.txt").unwrap();
     let steps = input
         .lines()
         .map(|line| line.split_whitespace())

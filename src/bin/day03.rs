@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let input = fs::read_to_string("input.txt").unwrap();
+    let input = fs::read_to_string("input/day03.txt").unwrap();
     let lines: Vec<_> = input.lines().collect();
 
     // zad 1
