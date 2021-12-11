@@ -5,7 +5,7 @@ fn main() {
     let lines: Vec<_> = input.lines().collect();
 
     // zad 1
-    let bits = count_bits(lines.iter().map(|l| *l));
+    let bits = count_bits(lines.iter().copied());
 
     let size = bits.len();
     let gamma: u32 = bits

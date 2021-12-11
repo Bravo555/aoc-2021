@@ -39,10 +39,8 @@ fn main() {
 
 fn draw_line(board: &mut Board, line: &Line, diag: bool) {
     let &((x1, y1), (x2, y2)) = line;
-    if !diag {
-        if x1 != x2 && y1 != y2 {
-            return;
-        }
+    if !diag && x1 != x2 && y1 != y2 {
+        return;
     }
 
     let (len_x, len_y) = (x2 - x1, y2 - y1);
